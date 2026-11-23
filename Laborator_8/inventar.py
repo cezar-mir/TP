@@ -30,6 +30,7 @@ def pe_servicii(tinte):
             continue
         grupe[serviciu] = []
         grupe[serviciu].append(port)
+    return grupe 
 
 
 def peste_prag(tinte, prag):
