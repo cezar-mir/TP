@@ -46,7 +46,7 @@ def peste_prag(tinte, prag):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("fisier")
-    p.add_argument("--prag", default=1024)
+    p.add_argument("--prag", type=int, default=1024)
     a = p.parse_args()
 
     tinte = incarca(a.fisier)
