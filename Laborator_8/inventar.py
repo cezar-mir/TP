@@ -28,8 +28,8 @@ def pe_servicii(tinte):
         if port is None:
             print("sar peste", t["gazda"], ": port invalid", t["port"])
             continue
-        grupe[serviciu] = []
-        grupe[serviciu].append(port)
+        grupe.setdefault(serviciu, []).append(port)
+
     return grupe 
 
 
